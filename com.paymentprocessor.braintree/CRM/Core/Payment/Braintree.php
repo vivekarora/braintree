@@ -29,7 +29,7 @@ class CRM_Core_Payment_Braintree extends CRM_Core_Payment {
     $this->_mode = $mode;
     $this->_paymentProcessor = $paymentProcessor;
     $this->_processorName = ts('Braintree');
-    $environment =  ($mode == "test") ? 'sandbox':'sandbox';
+    $environment =  ($mode == "test") ? 'sandbox':'production';
 
     Braintree_Configuration::environment($environment);
     Braintree_Configuration::merchantId($paymentProcessor["user_name"]);
