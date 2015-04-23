@@ -1,5 +1,5 @@
 
-For CiviCRM 4.3 and 4.2:
+Tested for CiviCRM 4.2->4.6.2:
 
 Install extension
  
@@ -40,7 +40,7 @@ Offline Contribution tests
         scripts/phpunit -uUSERNAME -pPASSWORD -hHOST -bTESTDBNAME WebTest_Event_AddEventBraintreeTest
 
 
- Event creation and Ofline  add participants tests
+ Event creation and Offline add participants tests
 
        	 scripts/phpunit -uUSERNAME -pPASSWORD -hHOST -bTESTDBNAME WebTest_Event_AddParticipationBraintreeTest
 
